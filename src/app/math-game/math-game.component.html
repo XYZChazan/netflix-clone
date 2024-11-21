@@ -1,0 +1,16 @@
+<div class="math-game-container">
+    <h2>Jogo de Matemática</h2>
+    <div class="equation">
+      <span>{{ firstNumber }}</span>
+      <span>{{ operator }}</span>
+      <input type="number" [(ngModel)]="userInput" />
+      <span>= {{ answer }}</span>
+    </div>
+    <button (click)="checkAnswer()">Verificar Resposta</button>
+    <p class="message">{{ message }}</p>
+  
+    <img *ngIf="showImage && message === 'Correto! Parabéns!'" src="../../assets/show.png" alt="Parabéns!" class="congrats-image" />
+    <img *ngIf="!showImage && message === 'Incorreto. Tente novamente!'" src="../../assets/trying.png" alt="Tente novamente!" class="congrats-image" />
+  
+    <button (click)="generateEquation()">Nova Equação</button>
+  </div>
