@@ -1,0 +1,23 @@
+nav {
+    height: 65px;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    display: block;  
+}
+
+h5 {
+    margin-top: 4%;
+}
+
+.navbar-brand {
+    margin-left: 1%;
+    display: flex;          
+    align-items: center;  
+    gap: 10px;               
+    text-decoration: none;
+    color: aliceblue;  
+}

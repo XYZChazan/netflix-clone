@@ -1,0 +1,18 @@
+
+.banner {
+    background-image: url('../../assets/plano\ de\ fundo.png');
+    background-size: contain; /* Faz com que a imagem se ajuste ao contêiner sem cortes */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.btn-danger {
+    font-size: 18px;
+    padding: 10px 20px;
+}

@@ -1,0 +1,17 @@
+<div class="categories-container">
+  <div class="list-container" *ngFor="let category of categories; let i = index">
+    <h2 class="category-title">{{ category }}</h2>
+    <div class="movie-list-container">
+      <button class="scroll-button left" (click)="scrollLeft(i)">&#8249;</button>
+
+      <div class="movie-list" #scrollContainer>
+        <div class="movie-item" *ngFor="let movie of movies" (click)="goToMovieDetails(movie.id)">
+          <img [src]="movie.image" [alt]="movie.title">
+          <div>{{ movie.title }}</div>
+        </div>
+      </div>
+
+      <button class="scroll-button right" (click)="scrollRight(i)">&#8250;</button>
+    </div>
+  </div>
+</div>
