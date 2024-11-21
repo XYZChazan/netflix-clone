@@ -21,3 +21,7 @@ h5 {
     text-decoration: none;
     color: aliceblue;  
 }
+
+.navbar-nav{
+    margin-right: 1rem;
+}

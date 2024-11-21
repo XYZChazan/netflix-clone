@@ -1,6 +1,5 @@
-
 .list-container {
-  margin-bottom: 6%;
+  margin-bottom: 1rem;
 }
 
 .movie-list-container {
@@ -9,6 +8,11 @@
   align-items: center;
   overflow: hidden;
   width: 100%;
+  padding: 10px;
+  border: 2px solid #87ceeb; /* Bordas azul claro */
+  border-radius: 15px; /* Bordas arredondadas */
+  background-color: #e6f7ff; /* Fundo azul bem claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .movie-list {
@@ -16,48 +20,83 @@
   overflow-x: scroll;
   scroll-behavior: smooth;
   padding: 20px;
-  gap: 10px;
-  overflow: hidden; 
+  gap: 15px; /* Espaçamento entre itens maior */
+  overflow: hidden;
 }
 
 .movie-item {
-  min-width: 200px;
-  height: 300px; 
+  min-width: 250px;
+  height: 250px;
   flex-shrink: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  background-color: #b0e0e6; /* Fundo azul pastel */
+  color: #333; /* Cor de texto mais suave */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px;
   cursor: pointer;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar os itens */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animação suave */
+}
+
+.movie-item:hover {
+  transform: scale(1.05); /* Zoom ao passar o mouse */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Realce na interação */
 }
 
 .movie-item img {
   width: 100%;
-  height: 80%; 
-  object-fit: cover; 
-  border-radius: 5px; 
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px; /* Imagem também arredondada */
+  border: 2px solid #87ceeb; /* Adiciona destaque à imagem */
 }
-  
-  .scroll-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1;
-  }
-  
-  .scroll-button.left {
-    left: 0;
-  }
-  
-  .scroll-button.right {
-    right: 0;
-  }
-  
+
+.movie-item div {
+  font-size: 1.1rem; /* Texto maior para legibilidade */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(80, 163, 214); /* Botões azul claro translúcido */
+  color: #ffffff; /* Texto branco */
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 1;
+  border-radius: 35%; /* Formato circular */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra nos botões */
+  opacity: 0.8; /* Transparência inicial */
+  transition: opacity 0.2s, background-color 0.2s; /* Animação suave */
+}
+
+.scroll-button:hover {
+  opacity: 1; /* Totalmente visível */
+  background-color: #176db3; /* Azul mais escuro ao passar o mouse */
+}
+
+.scroll-button.left {
+  left: 10px;
+  font-size: 40px;
+}
+
+.scroll-button.right {
+  right: 10px;
+  font-size: 40px;
+}
+
+.category-title {
+  font-size: 2rem; /* Título maior para chamar atenção */
+  color: #4682b4; /* Azul mais escuro */
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra no texto */
+}

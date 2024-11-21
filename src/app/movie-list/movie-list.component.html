@@ -5,7 +5,7 @@
       <button class="scroll-button left" (click)="scrollLeft(i)">&#8249;</button>
 
       <div class="movie-list" #scrollContainer>
-        <div class="movie-item" *ngFor="let movie of movies" (click)="goToMovieDetails(movie.id)">
+        <div class="movie-item" *ngFor="let movie of getMoviesByCategory(category)" (click)="goToMovieDetails(movie.id)">
           <img [src]="movie.image" [alt]="movie.title">
           <div>{{ movie.title }}</div>
         </div>

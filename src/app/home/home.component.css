@@ -1,16 +1,33 @@
-
 .banner {
     background-image: url('../../assets/plano\ de\ fundo.png');
-    background-size: contain; /* Faz com que a imagem se ajuste ao contêiner sem cortes */
+    background-size: cover; /* Ajusta a imagem ao contêiner sem cortes */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-position: center; /* Centraliza a imagem */
-    height: 500px;
+    height: 20rem; /* Altura ajustada para notebooks */
+    max-height: 60vh; /* Máximo de 40% da altura da viewport */
+    width: 100%; /* Garante que ocupe toda a largura disponível */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
 }
 
+/* Ajuste para telas maiores */
+@media (min-width: 1200px) {
+    .banner {
+        height: 30rem; /* Maior altura para telas grandes */
+    }
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .banner {
+        height: 20rem; /* Menor altura para dispositivos móveis */
+    }
+}
 
 .btn-danger {
     font-size: 18px;
