@@ -1,34 +1,147 @@
+body {
+  background: #0d47a1; /* Fundo geral escuro */
+  color: white;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
 .math-game-container {
-  width: 300px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1e88e5, #1565c0); /* Fundo mais escuro e amigável */
+  color: white;
   text-align: center;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.math-game-container h2 {
+  font-size: 3rem; /* Título maior */
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .equation {
-  font-size: 1.5em;
-  margin-bottom: 15px;
+  font-size: 2rem; /* Equação maior */
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 input {
-  width: 50px;
+  width: 80px;
+  height: 50px;
+  font-size: 1.5rem; /* Fonte maior no input */
   text-align: center;
+  border: 3px solid #ffeb3b;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  outline: none;
 }
 
-.message {
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-.congrats-image {
-  margin-top: 20px;
-  width: 100px;
-  height: auto;
+input:focus {
+  border-color: #fff;
 }
 
 button {
-  margin-top: 10px;
+  font-size: 1.8rem; /* Botão maior */
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #ffeb3b, #ffc107);
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  cursor: pointer;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+button:active {
+  transform: scale(1.05);
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 2rem; /* Mensagens maiores */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.message.correct {
+  color: #4caf50;
+}
+
+.message.incorrect {
+  color: #e53935;
+}
+
+.congrats-image {
+  margin-top: 30px;
+  width: 200px; /* Imagem maior */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.teste-overlay {
+  position: fixed; /* Fixo na tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* Garante que fica acima de tudo */
+}
+
+.teste {
+  background: linear-gradient(to bottom, #ffeb3b, #ffc107);
+  color: black;
+  padding: 30px; /* Reduzido o padding */
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 300px; /* Largura máxima menor */
+  z-index: 101; /* Acima do overlay */
+}
+
+.teste h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.teste-image {
+  width: 200px; /* Imagem menor */
+  height: auto;
+  margin: 20px 0;
+}
+
+.teste button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #4caf50, #388e3c); /* Gradiente verde chamativo */
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.teste button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }

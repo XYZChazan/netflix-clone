@@ -1,0 +1,78 @@
+/* Estilo principal do container */
+.details-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    overflow: hidden;
+    color: white; /* Texto claro */
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Fonte divertida */
+  }
+  
+  /* Imagem de fundo */
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Preenche a tela */
+    background-size: cover; /* Cobre toda a área sem distorcer */
+    background-position: center;
+    filter: blur(8px) brightness(0.7); /* Efeito de desfoque e escurecimento */
+    z-index: -1; /* Fica atrás do conteúdo */
+  }
+  
+  /* Estilo do conteúdo */
+  .content {
+    position: relative;
+    z-index: 2; /* Fica acima do fundo */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ao redor */
+    max-width: 80%; /* Limita a largura do conteúdo */
+  }
+  
+  /* Título */
+  .movie-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+  }
+  
+  /* Descrição */
+  .movie-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Botão */
+  .play-button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #007bff, #00d4ff); /* Gradiente chamativo */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Efeitos do botão ao passar o mouse */
+  .play-button:hover {
+    transform: scale(1.1); /* Zoom leve */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Destaque maior */
+  }
+  
+  /* Efeitos do botão ao clicar */
+  .play-button:active {
+    transform: scale(1.05); /* Reduz um pouco o aumento */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); /* Sombra menor */
+  }
+  

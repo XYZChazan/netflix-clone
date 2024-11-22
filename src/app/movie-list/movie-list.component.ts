@@ -14,9 +14,8 @@ export class MovieListComponent {
 
   movies = [
 
-    // Matemática
-    { id: 1, title: 'Aprendendo Números', image: 'assets/mat1.png', category: 'Matemática' },
-    { id: 2, title: 'Somando e Subtraindo', image: 'assets/mat2.png', category: 'Matemática' },
+    { id: 1, title: 'Somando e Subtraindo', image: 'assets/mat1.png', category: 'Matemática' },
+    { id: 2, title: 'Aprendendo Números', image: 'assets/mat2.png', category: 'Matemática' },
     { id: 3, title: 'Brincando com Tabuada', image: 'assets/mat3.png', category: 'Matemática' },
     { id: 4, title: 'Figuras Geométricas', image: 'assets/mat4.png', category: 'Matemática' },
     { id: 5, title: 'Contando Objetos', image: 'assets/mat5.png', category: 'Matemática' },
@@ -28,7 +27,6 @@ export class MovieListComponent {
     { id: 11, title: 'Somando com Amigos', image: 'assets/mat1.png', category: 'Matemática' },
     { id: 12, title: 'Explorando Formas', image: 'assets/mat2.png', category: 'Matemática' },
   
-    // Língua Portuguesa
     { id: 13, title: 'Histórias Fantásticas', image: 'assets/portugues.png', category: 'Língua Portuguesa' },
     { id: 14, title: 'Jogos de Palavras', image: 'assets/portugues2.png', category: 'Língua Portuguesa' },
     { id: 15, title: 'Rimas e Poesias', image: 'assets/portugues6.png', category: 'Língua Portuguesa' },

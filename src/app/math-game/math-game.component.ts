@@ -17,6 +17,7 @@ export class MathGameComponent {
   userInput: number | null = null;
   message: string = '';
   showImage: boolean = false;
+  showModal: boolean = false; // Controle do modal
 
   constructor() {
     this.generateEquation();
@@ -24,7 +25,9 @@ export class MathGameComponent {
 
   generateEquation() {
     this.firstNumber = Math.floor(Math.random() * 20) + 1;
+    console.log(this.firstNumber)
     this.secondNumber = Math.floor(Math.random() * 20) + 1;
+    console.log(this.secondNumber)
     this.operator = Math.random() > 0.5 ? '+' : '-';
 
     if (this.operator === '+') {
@@ -36,17 +39,28 @@ export class MathGameComponent {
     this.userInput = null;
     this.message = '';
     this.showImage = false;
+    this.showModal = false; // Fecha o modal ao gerar nova equação
   }
 
   checkAnswer() {
-    let expectedResult: number = this.answer! - this.firstNumber;
-
-    if (this.userInput === expectedResult) {
+    console.log(this.userInput)
+    console.log(this.secondNumber)
+    if (this.userInput === this.secondNumber) {
       this.message = 'Correto! Parabéns!';
       this.showImage = true;
     } else {
       this.message = 'Incorreto. Tente novamente!';
       this.showImage = false;
     }
+    console.log(this.showModal)
+    // Exibe o modal
+    this.showModal = true;
+
+    console.log(this.showModal)
+  }
+  
+
+  closeModal() {
+    this.showModal = false; // Fecha o modal
   }
 }

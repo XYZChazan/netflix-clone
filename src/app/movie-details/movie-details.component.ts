@@ -14,10 +14,10 @@ export class MovieDetailsComponent implements OnInit {
   movie: any = null;
 
   movies = [
-    { id: 1, title: 'Movie 1', image: 'assets/mat1.png', description: 'Descrição do Movie 1' },
-    { id: 2, title: 'Movie 2', image: 'assets/mat2.png', description: 'Descrição do Movie 2' },
-    { id: 3, title: 'Movie 3', image: 'assets/mat3.png', description: 'Descrição do Movie 3' },
-    { id: 4, title: 'Movie 4', image: 'assets/mat4.png', description: 'Descrição do Movie 4' },
+    { id: 1, title: 'Somando e Subtraindo', image: 'assets/mat1.png', description: 'vamos exercitar a habilidade de somar e subtrair' },
+    { id: 2, title: 'Aprendendo Números', image: 'assets/mat2.png', description: 'Descrição do Movie 2' },
+    { id: 3, title: 'Brincando com Tabuada', image: 'assets/mat3.png', description: 'Descrição do Movie 3' },
+    { id: 4, title: 'Figuras Geométricas', image: 'assets/mat4.png', description: 'Descrição do Movie 4' },
     { id: 5, title: 'Movie 5', image: 'assets/mat5.png', description: 'Descrição do Movie 5' },
     { id: 6, title: 'Movie 6', image: 'assets/mat1.png', description: 'Descrição do Movie 6' },
     { id: 7, title: 'Movie 7', image: 'assets/mat2.png', description: 'Descrição do Movie 7' },
